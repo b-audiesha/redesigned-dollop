@@ -1,0 +1,98 @@
+@charset "utf-8";
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+/*
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+*/
+
+@import "../node_modules/bulma/bulma";
+@import url('https://fonts.googleapis.com/css?family=Patua+One&display=swap');
+
+/* Remove padding and margin and adding defaults */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root {
+  --main-bg-color: #65CFE5;
+  --secondary-color: #BF0200;
+  --font-color: #FEF1E0;
+}
+
+body{
+  background-color: var(--main-bg-color);
+  color: #000000;
+}
+
+#custom {
+  font-family: "Patua One", cursive;
+}
+
+
+/*Set the <img> in display block and use margin auto to center*/
+.jumbotron {
+  background-color: var(--main-bg-color);
+}
+
+
+
+
+/******  FONTS STYLING *******/
+.coffee-name{
+  color: var(--secondary-color);
+  text-shadow: -1px 0 black,
+  0 2px black,
+  1px 0 black,
+  0 -1px black;
+  margin-bottom: 0;
+}
+
+.coffee-roast {
+  color: var(--font-color);
+  font-size: 1.5rem;
+}
+
+h5  {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+}
+
+
+
+/************   INPUT STYLING   ************/
+.search-input {
+  background-color: var(--font-color);
+  color: var(--secondary-color);
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #910912 !important;
+}
+
+label {
+  color: var(--font-color);
+  font-size: 1rem;
+}
